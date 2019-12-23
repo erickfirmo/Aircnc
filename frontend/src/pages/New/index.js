@@ -6,6 +6,8 @@ import './styles.css';
 
 export default function New() {
 
+    
+    const [thumbnail, setThumbnail] = useState(null);
     const [company, setCompany] = useState('');
     const [techs, setTechs] = useState('');
     const [price, setPrice] = useState('');
@@ -17,7 +19,7 @@ export default function New() {
     return (
         <form onSubmit={handleSubmit}>
             <label id="thumbnail">
-                <input type="file" />
+                <input type="file" onChange={event => setThumbnail(event.target.files[0])} />
                 <img src={camera} alt="Select img"/>
             </label>
 
