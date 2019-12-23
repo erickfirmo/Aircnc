@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import camera from '../../assets/camera.svg';
 
+import './styles.css';
 
 export default function New() {
 
