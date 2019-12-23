@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
+import camera from '../../assets/camera.svg';
+
+
 export default function New() {
+
     const [company, setCompany] = useState('');
     const [techs, setTechs] = useState('');
     const [price, setPrice] = useState('');
@@ -12,7 +16,8 @@ export default function New() {
     return (
         <form onSubmit={handleSubmit}>
             <label id="thumbnail">
-                <input type="file"/>
+                <input type="file" />
+                <img src={camera} alt="Select img"/>
             </label>
 
 
