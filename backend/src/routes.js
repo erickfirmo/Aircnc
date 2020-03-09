@@ -8,4 +8,4 @@ routes.post('/users', (req, res) => {
 });
 
 
-modules.exports =  routes;
+module.exports =  routes;
